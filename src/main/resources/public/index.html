@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Artist Lyrics</title>
+
+        <script defer src="assets/jquery-3.5.0.min.js"></script>
+        <script defer src="assets/index.js"></script>
+    </head>
+    <body>
+        <h1>Artist Lyrics</h1>
+
+        <p>A service to lookup the average number of words in all songs of a given artist.</p>
+
+        <div>
+            <label for="artistSearchTerm">Search for an artist: </label>
+            <input type="text" id="artistSearchTerm">
+            <input type="submit" value="Search" id="searchArtist">
+        </div>
+
+        <br/>
+        <div id="artistSelectSection" hidden>
+            <p>Only the first 100 search results are shown, if you cannot find your artist, make your search more specific.</p>
+            <label for="artistSelect">Select your artist: </label>
+            <select name=artists id="artistSelect">
+                <!--js puts the potential artists in here-->
+            </select>
+        </div>
+
+        <br/>
+        <div>
+            <p id=results></p>
+        </div>
+    </body>
+</html>
